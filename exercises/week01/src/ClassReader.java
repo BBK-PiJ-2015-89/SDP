@@ -24,3 +24,7 @@ public class ClassReader {
 
     }
 }
+
+interface Test {
+    void test();
+}
