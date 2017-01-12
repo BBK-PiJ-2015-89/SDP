@@ -11,6 +11,14 @@ public class Driver {
             aStorage.setValue(myAccount);
 // Deposit
             myAccount.deposit(15);
+
+            System.out.println( aStorage.getValue().showBalance() );
+            if( aStorage.getClass() == sStorage.getClass() ) {
+                System.out.println( "EQUAL" );
+            } else {
+                System.out.println( "NOT EQUAL" );
+            }
+
         }
         catch ( InstantiationException e ) {
 // ...
