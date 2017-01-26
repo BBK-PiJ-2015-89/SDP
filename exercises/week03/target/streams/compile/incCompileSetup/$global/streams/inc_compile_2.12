@@ -1,0 +1,94 @@
+format version: 5
+output mode:
+1 items
+0 -> single
+output directories:
+1 items
+output dir -> I:\SDP-2017\exercises\week03\target\scala-2.12\classes
+compile options:
+0 items
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.12.1
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> true
+products:
+2 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> I:\SDP-2017\exercises\week03\target\scala-2.12\classes\basics\ScalaBasics$.class
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> I:\SDP-2017\exercises\week03\target\scala-2.12\classes\basics\ScalaBasics.class
+binary dependencies:
+2 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\rt.jar
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+2 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> basics.ScalaBasics
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> basics.ScalaBasics$
+used names:
+16 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> <init>
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> ???
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> AnyRef
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Array
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> BigInt
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Boolean
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Int
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Map
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Predef
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Range
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> ScalaBasics
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> String
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> Tuple2
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> basics
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> package
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> scala
+product stamps:
+2 items
+I:\SDP-2017\exercises\week03\target\scala-2.12\classes\basics\ScalaBasics$.class -> lastModified(1485456367511)
+I:\SDP-2017\exercises\week03\target\scala-2.12\classes\basics\ScalaBasics.class -> lastModified(1485456367480)
+source stamps:
+1 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> hash(868723ae534b3be21e80da8fa6d1768d4b46c712)
+binary stamps:
+2 items
+C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\rt.jar -> lastModified(1466524317156)
+C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar -> lastModified(1480936165000)
+class names:
+2 items
+C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\rt.jar -> java.lang.Object
+C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar -> scala.Array
+internal apis:
+1 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBMbZ9IAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAHnNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cHylnFx0AAZub3RpZnlzcQB+AAzTEXobdAAMbWluUmVjdXJzaXZlc3EAfgAMctepw3QABHdhaXRzcQB+AAwgIHFcdAANJGFzSW5zdGFuY2VPZnNxAH4ADDKh3Mt0AAxpc1BhbGluZHJvbWVzcQB+AAyBIdIWdAAGZXF1YWxzc3EAfgAMGlaKHXQADGFzSW5zdGFuY2VPZnNxAH4ADH7DZlp0AAxzeW5jaHJvbml6ZWRzcQB+AAzUS0fPdAALU2NhbGFCYXNpY3NzcQB+AAzxUtuTdAANJGlzSW5zdGFuY2VPZnNxAH4ADIWX0E50AAhtaW5XaGlsZXNxAH4ADPEhRMt0AAZiYXNlMzZzcQB+AAyMMud5dAAJbm90aWZ5QWxsc3EAfgAMdcDPc3QADGlzSW5zdGFuY2VPZnNxAH4ADEiybIV0AAtzcGxpdEluSGFsZnNxAH4ADOBFjYt0AAI9PXNxAH4ADHf5tO10AAVjbG9uZXNxAH4ADPCJ58N0AAhvZGRSYW5nZXNxAH4ADPg/pYV0AAh0b1N0cmluZ3NxAH4ADJp2rZ90AAIhPXNxAH4ADDKz10h0AAhnZXRDbGFzc3NxAH4ADDA2z7p0AAZtaW5Gb3JzcQB+AAzBGebJdAACbmVzcQB+AAx+yhCOdAADYWRkc3EAfgAMRL02g3QAB2luUmFuZ2VzcQB+AAzu5tP4dAALd29yZENvdW50ZXJzcQB+AAw6oiDQdAACZXFzcQB+AAysK8n+dAACIyNzcQB+AAwqQJqYdAAIZmluYWxpemVzcQB+AAzj1bZYdAAIaGFzaENvZGVzcgATeHNidGkuYXBpLlNvdXJjZUFQSblep/kpIzikAgACWwALZGVmaW5pdGlvbnN0ABdbTHhzYnRpL2FwaS9EZWZpbml0aW9uO1sACHBhY2thZ2VzdAAUW0x4c2J0aS9hcGkvUGFja2FnZTt4cHVyABdbTHhzYnRpLmFwaS5EZWZpbml0aW9uO4jJXOe0414OAgAAeHAAAAABc3IAE3hzYnRpLmFwaS5DbGFzc0xpa2WDNByh37CXbAIABEwADmRlZmluaXRpb25UeXBldAAaTHhzYnRpL2FwaS9EZWZpbml0aW9uVHlwZTtbABBzYXZlZEFubm90YXRpb25zdAATW0xqYXZhL2xhbmcvU3RyaW5nO0wACHNlbGZUeXBldAAQTHhzYnRpL2FwaS9MYXp5O0wACXN0cnVjdHVyZXEAfgBTeHIAIXhzYnRpLmFwaS5QYXJhbWV0ZXJpemVkRGVmaW5pdGlvbvkRbrHVUDziAgABWwAOdHlwZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9UeXBlUGFyYW1ldGVyO3hyABR4c2J0aS5hcGkuRGVmaW5pdGlvbocqG+hxQuNGAgAETAAGYWNjZXNzdAASTHhzYnRpL2FwaS9BY2Nlc3M7WwALYW5ub3RhdGlvbnN0ABdbTHhzYnRpL2FwaS9Bbm5vdGF0aW9uO0wACW1vZGlmaWVyc3QAFUx4c2J0aS9hcGkvTW9kaWZpZXJzO0wABG5hbWVxAH4ADXhwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAASYmFzaWNzLlNjYWxhQmFzaWNzdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AbHhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AawBwc3EAfgBwc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AFNMAAlpbmhlcml0ZWRxAH4AU0wAB3BhcmVudHNxAH4AU3hxAH4AdHNxAH4AawBwc3EAfgBwdXEAfgBOAAAAAHNxAH4AawBwc3EAfgBwdXEAfgBOAAAAAHNxAH4AawBwc3EAfgBwdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAJzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgBzdAAGT2JqZWN0c3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgBzc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAADc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AARqYXZhc3EAfgCQdAAEbGFuZ3NyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCRc3EAfgCEdAADQW55c3EAfgCIc3EAfgCLdXEAfgCOAAAAAnNxAH4AkHQABXNjYWxhcQB+AJd1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAXNyABF4c2J0aS5hcGkuUGFja2FnZX5Zj/auzjlYAgABTAAEbmFtZXEAfgANeHB0AAZiYXNpY3NzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVncGUDldXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQANkk6XFNEUC0yMDE3XGV4ZXJjaXNlc1x3ZWVrMDNcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFIaHI65TSzviHoDaj6bRdo1LRscS
+external apis:
+0 items
+source infos:
+1 items
+I:\SDP-2017\exercises\week03\src\main\scala\basics\ScalaBasics.scala -> 
+AAAAAAAAAAA=
+compilations:
+1 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABWdwZQOV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQANkk6XFNEUC0yMDE3XGV4ZXJjaXNlc1x3ZWVrMDNcdGFyZ2V0XHNjYWxhLTIuMTJcY2xhc3Nlc3QAAS8=

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Week02/Week02.iml" filepath="$PROJECT_DIR$/Week02/Week02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week02/src/di-scala/di-scala.iml" filepath="$PROJECT_DIR$/Week02/src/di-scala/di-scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercises.iml" filepath="$PROJECT_DIR$/exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Week02/src/springdi_scala/springdi_scala.iml" filepath="$PROJECT_DIR$/Week02/src/springdi_scala/springdi_scala.iml" />
       <module fileurl="file://$PROJECT_DIR$/week01/week01.iml" filepath="$PROJECT_DIR$/week01/week01.iml" />
     </modules>
   </component>

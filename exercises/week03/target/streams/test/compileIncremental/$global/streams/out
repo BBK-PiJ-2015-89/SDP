@@ -1,0 +1,47 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala, I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala, I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala, I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 2 sources: invalidated sources (2) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to I:\SDP-2017\exercises\week03\target\scala-2.12\test-classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.12.1[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 9d1542, interfacing (CompilerInterface) with Scala compiler version 2.12.1[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\resources.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\rt.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\jsse.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\jce.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\charsets.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\lib\jfr.jar;C:\Program Files (x86)\Java\jdk1.8.0_91\jre\classes;C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.1.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	I:\SDP-2017\exercises\week03\target\scala-2.12\test-classes;I:\SDP-2017\exercises\week03\target\scala-2.12\classes;C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.1.jar;C:\Users\gwilki01\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.1.jar;C:\Users\gwilki01\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar;C:\Users\gwilki01\.ivy2\cache\org.scalatest\scalatest_2.12\bundles\scalatest_2.12-3.0.1.jar;C:\Users\gwilki01\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.1.jar;C:\Users\gwilki01\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.12\bundles\scala-parser-combinators_2.12-1.0.4.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 6.911673522 s[0m
+[0m[[0mdebug[0m] [0mInvalidating I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala)[0m
+[0m[[0mdebug[0m] [0mThe I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala source file has the following implicit definitions changed:[0m
+[0m[[0mdebug[0m] [0m	unconstrainedEquality, convertToEqualizer.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala)[0m
+[0m[[0mdebug[0m] [0mThe I:\SDP-2017\exercises\week03\src\test\scala\support\TreeTraversals.scala source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	notify, getMethod, traverseGuard, atOwner, wait, $asInstanceOf, hasLoops, equals, traverseTypeAscription, traverseCases, traversePattern, asInstanceOf, traverseConstant, getTerms, synchronized, calls, $isInstanceOf, traverseAnnotations, traverseImportSelector, hasVarDef, hasForEach, notifyAll, getVals, traverseParams, getVars, isInstanceOf, hasForComp, traverseStats, <init>, apply, raw, getVal, ==, traverseTreess, traverse, clone, ValTraverser, ifs, getMethods, traverseTrees, hasIfs, TreeTraversals, hasValDef, traverseModifiers, traverseParamss, toString, hasWhileLoop, !=, IfExprTraverser, doesNotHaveIfs, currentOwner, getClass, MethodCallTraverser, getIfs, traverseTypeArgs, valdefs, traverseName, traverseSelfType, defdefs, ne, asTree, traverseParents, eq, ##, finalize, hashCode, MethodTraverser.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mThe following modified names cause invalidation of I:\SDP-2017\exercises\week03\src\test\scala\basics\PublicScalaBasicsSuite.scala: Set(getMethod, hasLoops, asInstanceOf, hasVarDef, hasForEach, isInstanceOf, hasForComp, <init>, apply, ==, hasIfs, TreeTraversals, hasValDef, hasWhileLoop, doesNotHaveIfs, ne)[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
