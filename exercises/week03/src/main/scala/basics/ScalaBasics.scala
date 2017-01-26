@@ -60,7 +60,7 @@ object ScalaBasics {
    */
   def minWhile(r: Array[Int]): Int = {
     var min = r{0}
-    var i = 0
+    var i = 1
     while (i < r.length){
       if (r{i} < min){
         min = r{i}
