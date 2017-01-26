@@ -17,7 +17,7 @@ object ScalaBasics {
    * @param b operand b
    * @return the sum
    */
-  def add(a: Int, b: Int): Int = ???
+  def add(a: Int, b: Int): Int = a + b
 
   /**
    * Write a function that returns the inclusive Range from start to end.
@@ -58,7 +58,17 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minWhile(r: Array[Int]): Int = ???
+  def minWhile(r: Array[Int]): Int = {
+    var min = r{0}
+    var i = 0
+    while (i < r.length){
+      if (r{i} < min){
+        min = r{i}
+      }
+      i+=1
+    }
+    min
+  }
 
   /**
    * Write a function that returns the minimum integer in the Array r.
