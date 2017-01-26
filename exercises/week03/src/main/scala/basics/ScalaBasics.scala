@@ -1,5 +1,7 @@
 package basics
 
+import scala.runtime.RichInt
+
 /**
  * This is a singleton object containing the functions you need
  * to implement. Please make sure to read the documentation associated
@@ -26,7 +28,10 @@ object ScalaBasics {
    * @param end the end of the range
    * @return the inclusive Range from start to end
    */
-  def inRange(start: Int, end: Int): Range = ???
+  def inRange(start: Int, end: Int): Range = {
+    val inRange = new RichInt(start)
+    inRange.to(end, 1)
+  }
 
   /**
    * Write a function that returns a Range of odd n odd integers starting at 1.
@@ -36,7 +41,10 @@ object ScalaBasics {
    * @param n the number of odd integers in the range
    * @return a Range of odd integers, excluding the last add integer
    */
-  def oddRange(n: Int): Range = ???
+  def oddRange(n: Int): Range = {
+    val oddRange = new RichInt(1)
+    oddRange.to(n, 2)
+  }
 
   /**
    * Write a function that returns the minimum integer in the Array r.
