@@ -12,7 +12,7 @@ public class SmokeSensor implements SensorInt {
     private Random returnValue = new Random();
 
     public SmokeSensor (String location){
-        location = this.location;
+        this.location = location;
     }
 
     @Override
