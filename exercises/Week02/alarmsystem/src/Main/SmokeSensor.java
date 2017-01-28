@@ -6,8 +6,11 @@ import java.util.Random;
  * Created by graemewilkinson on 28/01/17.
  */
 public class SmokeSensor implements SensorInt {
+    private int batteryPerc = 100;
     String location = null;
+    String actualSensorType = "Smoke Sensor";
     private Random returnValue = new Random();
+
     public SmokeSensor (String location){
         location = this.location;
     }
@@ -20,16 +23,19 @@ public class SmokeSensor implements SensorInt {
 
     @Override
     public String getLocation() {
-        return null;
+
+        return location;
     }
 
     @Override
     public String getSensortype() {
-        return null;
+        return actualSensorType;
     }
 
     @Override
     public int getBatteryPercentage() {
-        return 0;
+        int tempBat = batteryPerc;
+        batteryPerc = batteryPerc-20;
+        return tempBat;
     }
 }

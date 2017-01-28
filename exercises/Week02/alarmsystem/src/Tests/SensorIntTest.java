@@ -40,7 +40,7 @@ public class SensorIntTest{
             }
         }
         System.out.println(numberOfTriggers);
-        Assert.that(numberOfTriggers<520 && numberOfTriggers>480, "Triggers equal 5%");
+        Assert.that(numberOfTriggers<600 && numberOfTriggers>400, "Triggers equal 5%");
     }
 
     @Test
@@ -56,7 +56,7 @@ public class SensorIntTest{
     @Test
     public void smokecheckDrainage() throws Exception {
         int currentBattery = 100;
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 5; i++) {
             currentBattery = smoke.getBatteryPercentage();
         }
         Assert.that(currentBattery == 0, "drained");
