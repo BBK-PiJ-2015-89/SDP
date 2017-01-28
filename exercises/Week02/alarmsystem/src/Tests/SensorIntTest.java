@@ -71,7 +71,7 @@ public class SensorIntTest{
             }
         }
         System.out.println(numberOfTriggers);
-        Assert.that(numberOfTriggers<520 && numberOfTriggers>480, "Triggers equal 5%");
+        Assert.that(numberOfTriggers<1100 && numberOfTriggers>900, "Triggers equal 10%");
     }
 
     @Test
