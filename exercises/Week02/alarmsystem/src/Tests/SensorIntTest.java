@@ -33,12 +33,13 @@ public class SensorIntTest{
     @Test
     public void firecheckTriggers() throws Exception {
         int numberOfTriggers = 0;
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < 10000; i++){
             if(fire.isTriggered()){
                 numberOfTriggers++;
             }
         }
-        Assert.that(numberOfTriggers==5, "Triggers equal 5%");
+        System.out.println(numberOfTriggers);
+        Assert.that(numberOfTriggers<520 && numberOfTriggers>480, "Triggers equal 5%");
     }
 
     @Test
