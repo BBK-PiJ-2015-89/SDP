@@ -22,7 +22,6 @@ public class SecurityControlUnit extends ControlUnit {
     public boolean timeCheck() {
         String timeStamp = new SimpleDateFormat("HHmm").format(Calendar.getInstance().getTime());
         int result = Integer.parseInt(timeStamp);
-        System.out.println(result);
         return result > 2159 || result < 601;
     }
 }
