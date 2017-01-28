@@ -23,6 +23,12 @@ public interface Sensor {
      * @return returns a textual description of thesensor type such as"Fire sensor"
     or "Smoke sensor".
      */
-    String getSensortype();
+    String getSensorType();
+
+    /**
+     *
+     * @return sensor category either hazard or security
+     */
+    String getSensorCat();
 
 }

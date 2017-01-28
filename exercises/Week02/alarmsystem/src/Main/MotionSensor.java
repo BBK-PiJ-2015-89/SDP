@@ -16,7 +16,12 @@ public class MotionSensor implements Sensor {
     }
 
     @Override
-    public String getSensortype() {
+    public String getSensorType() {
         return null;
+    }
+
+    @Override
+    public String getSensorCat() {
+        return "Security";
     }
 }

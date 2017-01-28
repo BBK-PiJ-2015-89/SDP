@@ -50,7 +50,7 @@ public class SensorTest {
 
     @Test
     public void fireTypeTest() throws Exception {
-        Assert.that(fire.getSensortype().equals("Fire Sensor"), "It should be a fire sensor");
+        Assert.that(fire.getSensorType().equals("Fire Sensor"), "It should be a fire sensor");
     }
 
     @Test
@@ -81,6 +81,6 @@ public class SensorTest {
 
     @Test
     public void smokeTypeTest() throws Exception {
-        Assert.that(smoke.getSensortype().equals("Smoke Sensor"), "should be a smoke sensor");
+        Assert.that(smoke.getSensorType().equals("Smoke Sensor"), "should be a smoke sensor");
     }
 }

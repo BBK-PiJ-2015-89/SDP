@@ -28,8 +28,13 @@ public class SmokeSensor implements SensorFireSmoke{
     }
 
     @Override
-    public String getSensortype() {
+    public String getSensorType() {
         return actualSensorType;
+    }
+
+    @Override
+    public String getSensorCat() {
+        return "Hazard";
     }
 
     @Override
