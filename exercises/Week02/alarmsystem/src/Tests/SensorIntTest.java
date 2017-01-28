@@ -29,4 +29,14 @@ public class SensorIntTest{
         Assert.that(currentBattery == 0, "drained");
     }
 
+    @Test
+    public void checkTriggers() throws Exception {
+        int numberOfTriggers = 0;
+        for (int i = 0; i < 100; i++){
+            if(fire.isTriggered()){
+                numberOfTriggers++;
+            }
+        }
+        Assert.that(numberOfTriggers==5, "Triggers equal 5%");
+    }
 }

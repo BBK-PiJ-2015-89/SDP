@@ -24,8 +24,8 @@ public class FireSensor implements SensorInt {
 
     @Override
     public int getBatteryPercentage() {
-        int tempbat = batteryPerc;
+        int tempBat = batteryPerc;
         batteryPerc = batteryPerc-10;
-        return tempbat;
+        return tempBat;
     }
 }
