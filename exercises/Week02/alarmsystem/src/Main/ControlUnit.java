@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControlUnit {
+  private List<SensorInt> sensors = new ArrayList<SensorInt>();
+
+  public ControlUnit(List<SensorInt> sensorList){
+    sensors = sensorList;
+  }
 
   public void pollSensors() {
-    List<SensorInt> sensors = new ArrayList<SensorInt>();
-    sensors.add(new FireSensor("Living Room"));
-    sensors.add(new SmokeSensor("Loft"));
 
     for (SensorInt sensor : sensors) {
       if (sensor.isTriggered()) {
