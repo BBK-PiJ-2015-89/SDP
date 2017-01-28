@@ -4,6 +4,9 @@ package Main;
  * Created by graemewilkinson on 28/01/17.
  */
 public class FireSensor implements SensorInt {
+
+    private int batteryPerc = 100;
+
     @Override
     public boolean isTriggered() {
         return false;
@@ -21,6 +24,8 @@ public class FireSensor implements SensorInt {
 
     @Override
     public int getBatteryPercentage() {
-        return 0;
+        int tempbat = batteryPerc;
+        batteryPerc = batteryPerc-10;
+        return tempbat;
     }
 }
