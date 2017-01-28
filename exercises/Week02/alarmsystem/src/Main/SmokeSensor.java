@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by graemewilkinson on 28/01/17.
  */
-public class SmokeSensor implements SensorInt {
+public class SmokeSensor implements SensorFireSmoke{
     private int batteryPerc = 100;
     String location = null;
     String actualSensorType = "Smoke Sensor";

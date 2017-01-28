@@ -25,10 +25,4 @@ public interface SensorInt {
      */
     String getSensortype();
 
-    /**
-     *
-     * @return Returns a number between 0-100 where 0 is empty and 100 is fully charged
-     */
-    int getBatteryPercentage();
-
 }
