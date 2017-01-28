@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ControlUnit {
-  private List<SensorInt> sensors = new ArrayList<SensorInt>();
+  private List<Sensor> sensors = new ArrayList<Sensor>();
 
-  public ControlUnit(List<SensorInt> sensorList){
+  public ControlUnit(List<Sensor> sensorList){
     sensors = sensorList;
   }
 
   public void pollSensors() {
 
-    for (SensorInt sensor : sensors) {
+    for (Sensor sensor : sensors) {
       if (sensor.isTriggered()) {
         System.out.println("A " + sensor.getSensortype() + " sensor was triggered at " + sensor.getLocation());
       } else {

@@ -3,7 +3,7 @@ package Main;
 /**
  * Created by graemewilkinson on 28/01/17.
  */
-public interface SensorInt {
+public interface Sensor {
 
     /**
      * returns true/false for whether the sensor is triggered or not. Different sensors have different rules applied to them.

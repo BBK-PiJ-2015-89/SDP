@@ -1,7 +1,7 @@
 package Tests;
 
 import Main.FireSensor;
-import Main.SensorInt;
+import Main.SensorFireSmoke;
 import Main.SmokeSensor;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,12 +10,12 @@ import sun.jvm.hotspot.utilities.Assert;
 /**
  * Created by graemewilkinson on 28/01/17.
  */
-public class SensorIntTest{
+public class SensorTest {
 
     String fireSensorLocation = "Living Room";
     String smokeDetectorLocation = "Loft";
-    SensorInt smoke = new SmokeSensor(smokeDetectorLocation);
-    SensorInt fire = new FireSensor(fireSensorLocation);
+    SensorFireSmoke smoke = new SmokeSensor(smokeDetectorLocation);
+    SensorFireSmoke fire = new FireSensor(fireSensorLocation);
 
     @Before
     public void setUp() throws Exception {
