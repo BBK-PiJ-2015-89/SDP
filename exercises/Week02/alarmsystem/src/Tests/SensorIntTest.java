@@ -12,8 +12,9 @@ import sun.jvm.hotspot.utilities.Assert;
  */
 public class SensorIntTest{
 
+    String fireSensorLocation = "Living Room";
     SensorInt smoke = new SmokeSensor();
-    SensorInt fire = new FireSensor();
+    SensorInt fire = new FireSensor(fireSensorLocation);
 
     @Before
     public void setUp() throws Exception {
@@ -21,7 +22,7 @@ public class SensorIntTest{
     }
 
     @Test
-    public void checkDrainage() throws Exception {
+    public void firecheckDrainage() throws Exception {
         int currentBattery = 100;
         for (int i = 0; i <= 10; i++) {
             currentBattery = fire.getBatteryPercentage();
@@ -30,7 +31,7 @@ public class SensorIntTest{
     }
 
     @Test
-    public void checkTriggers() throws Exception {
+    public void firecheckTriggers() throws Exception {
         int numberOfTriggers = 0;
         for (int i = 0; i < 100; i++){
             if(fire.isTriggered()){
@@ -38,5 +39,15 @@ public class SensorIntTest{
             }
         }
         Assert.that(numberOfTriggers==5, "Triggers equal 5%");
+    }
+
+    @Test
+    public void firelocationCheck() throws Exception{
+       Assert.that(fire.getLocation().equals("Living Room"), "Check we are in the living room");
+    }
+
+    @Test
+    public void fireTypeTest() throws Exception {
+        Assert.that(fire.getSensortype().equals("Fire Sensor"), "It should be a fire sensor");
     }
 }
