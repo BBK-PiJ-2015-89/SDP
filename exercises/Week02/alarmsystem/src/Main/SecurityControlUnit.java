@@ -7,19 +7,22 @@ import java.util.List;
 /**
  * Created by graemewilkinson on 28/01/17.
  */
-public class SecurityControlUnit extends ControlUnit{
-
+public class SecurityControlUnit extends ControlUnit {
 
     public SecurityControlUnit(List<Sensor> sensorList) {
         super(sensorList);
     }
 
-    public boolean timeCheck(){
-        String timeStamp = new SimpleDateFormat("HHmm").format(Calendar.getInstance().getTime());
-        int result = Integer.parseInt(timeStamp);
-        return result > 2159 && result < 600;
+    public void pollSensors(){
+        if(timeCheck()){
+            super.pollSensors();
+        }
     }
 
-
-
+    public boolean timeCheck() {
+        String timeStamp = new SimpleDateFormat("HHmm").format(Calendar.getInstance().getTime());
+        int result = Integer.parseInt(timeStamp);
+        System.out.println(result);
+        return result > 2159 || result < 601;
+    }
 }
