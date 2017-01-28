@@ -4,6 +4,11 @@ package Main;
  * Created by graemewilkinson on 28/01/17.
  */
 public class SmokeSensor implements SensorInt {
+    String location = null;
+    public SmokeSensor (String location){
+        location = this.location;
+    }
+
     @Override
     public boolean isTriggered() {
         return false;
