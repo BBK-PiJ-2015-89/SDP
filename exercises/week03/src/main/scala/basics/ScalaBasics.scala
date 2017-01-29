@@ -1,6 +1,10 @@
 package basics
 
+import javafx.collections.transformation.SortedList
+
+import scala.collection.SortedSet
 import scala.runtime.RichInt
+import scala.tools.nsc.doc.base.comment.OrderedList
 
 /**
  * This is a singleton object containing the functions you need
@@ -59,13 +63,19 @@ object ScalaBasics {
    * @return the minimum integer in the array
    */
   def minWhile(r: Array[Int]): Int = {
-    var min = r{0}
+    var min = r {
+      0
+    }
     var i = 1
-    while (i < r.length){
-      if (r{i} < min){
-        min = r{i}
+    while (i < r.length) {
+      if (r {
+        i
+      } < min) {
+        min = r {
+          i
+        }
       }
-      i+=1
+      i += 1
     }
     min
   }
@@ -82,7 +92,15 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minFor(r: Array[Int]): Int = ???
+  def minFor(r: Array[Int]): Int = {
+
+    var orderedSet = collection.immutable.SortedSet[Int]()
+
+    for (i <- 0 until r.length) {
+      orderedSet+= r(i)
+    }
+    orderedSet.head
+  }
 
   /**
    * Write a function called minRecursive that returns the minimum integer in the Array r.
@@ -117,8 +135,8 @@ object ScalaBasics {
    * half of the string and e is the last half of the string.
    *
    * For example,
-   *   splitInHalf("abcdef") => ("abc", "def")
-   *   splitInFalf("abcde")  => ("ab", "cde")
+   * splitInHalf("abcdef") => ("abc", "def")
+   * splitInFalf("abcde")  => ("ab", "cde")
    *
    * Your implementation must conform to the following rules:
    *
@@ -185,11 +203,11 @@ object ScalaBasics {
    * would return
    *
    * Map("this" -> 2,
-   *     "is" -> 2,
-   *     "a" -> 2,
-   *     "sentence." -> 1,
-   *     "sentence" -> 1,
-   *     "too!" -> 1)
+   * "is" -> 2,
+   * "a" -> 2,
+   * "sentence." -> 1,
+   * "sentence" -> 1,
+   * "too!" -> 1)
    *
    * You may assume that all words are delimited by spaces. You need not worry
    * about punctuation. You can implement this however you wish.
