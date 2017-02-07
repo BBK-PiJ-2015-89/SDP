@@ -12,7 +12,10 @@ object Funcs {
     * @param ls : List[A] the list to process
     * @return A list containing all but the first element of ls
     */
-  def tail[A](ls: List[A]): List[A] = ???
+  def tail[A](ls: List[A]): List[A] = ls match {
+    case Nil => throw new IllegalArgumentException
+    case h::t => t
+  }
 
   /**
     * setHead replaces the first value in a list with a given value. If the
@@ -23,7 +26,10 @@ object Funcs {
     * @return a list whose head is `a' and whose tail is all but the first
     *         element of ls.
     **/
-  def setHead[A](ls: List[A], a: A): List[A] = ???
+  def setHead[A](ls: List[A], a: A): List[A] = ls match {
+    case h::t => a::t
+    case Nil => a::Nil
+  }
 
   /**
     * drop removes n elements from the given list. If n is greater than the
@@ -33,7 +39,15 @@ object Funcs {
     * @param n  : Int the number of elements to drop.
     * @return a list with the first n elements of ls removed, or an empty list.
     */
-  def drop[A](ls: List[A], n: Int): List[A] = ???
+  def drop[A](ls: List[A], n: Int): List[A] = ls match{
+    case Nil => throw new IllegalArgumentException("Can't remove items from an empty list")
+    case h::t => {
+      if(n<=0) h::t
+      else if(n>ls.length) Nil
+      else if (n==1) t
+      else drop(t, n-1)
+    }
+  }
 
   /**
     * init takes a list and removes the last element.
@@ -43,7 +57,12 @@ object Funcs {
     * @param ls : List[A] the list to be changed.
     * @return a list with the last element of ls removed.
     */
-  def init[A](ls: List[A]): List[A] = ???
+  def init[A](ls: List[A]): List[A] = ls match{
+    case Nil => throw new IllegalArgumentException
+    case h::Nil => Nil
+    case h::t => h::init(t)
+
+  }
 
   // LIST FOLDING
 
