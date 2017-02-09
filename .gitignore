@@ -1,12 +1,5 @@
 *.class
 .DS_Store
 .idea
-project/*
-target/*
-exercises/*/project/*
-exercises/*/target/*
-
-coursework/*/project/*
-coursework/*/target/*
-examples/*/project/*
-examples/*/target/*
+project/
+target/
