@@ -8,3 +8,5 @@ exercises/*/target/*
 
 coursework/*/project/*
 coursework/*/target/*
+examples/*/project/*
+examples/*/target/*
