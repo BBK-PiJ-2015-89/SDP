@@ -91,8 +91,8 @@ object ScalaBasics {
   def minFor(r: Array[Int]): Int = {
 
     var mini = Integer.MAX_VALUE
-    for(i <- r.indices){
-      mini = mini.min(r(i))
+    for(i <- r){
+      mini = mini.min(i)
     }
     mini
    /* var orderedSet = collection.immutable.SortedSet[Int]()
@@ -118,7 +118,11 @@ object ScalaBasics {
    * @return the minimum integer in the array
    */
   def minRecursive(r: Array[Int]): Int = {
-      r.min
+   if(r.length == 1) r.head
+    else if(r.head < r.last)
+     minRecursive(r.dropRight(1))
+   else
+     minRecursive(r.tail)
   }
 
   /**
