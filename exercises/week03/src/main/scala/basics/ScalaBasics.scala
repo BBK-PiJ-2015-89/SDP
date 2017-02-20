@@ -96,7 +96,7 @@ object ScalaBasics {
 
     var orderedSet = collection.immutable.SortedSet[Int]()
 
-    for (i <- 0 until r.length) {
+    for (i <- r.indices) {
       orderedSet += r(i)
     }
     orderedSet.head
