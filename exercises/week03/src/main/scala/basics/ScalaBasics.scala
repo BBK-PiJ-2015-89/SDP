@@ -226,6 +226,26 @@ object ScalaBasics {
    * @param lines the lines of a text file
    * @return a map from words to the number of times that word was seen
    */
-  def wordCounter(lines: Array[String]): Map[String, Int] = ???
+  def wordCounter(lines: Array[String]): Map[String, Int] = {
+    //var wordMap = Map[String, Int]
+   val wordMap = collection.mutable.Map[String, Int] ()
+    val tempArray = Array [String]()
+    for(i<- lines) {
+      val tempArray = i.split(" ")
+
+      for (j <- tempArray) {
+        tempArray :+ j
+      }
+    }
+    for(k <- tempArray) {
+      if(wordMap.contains(k)){
+        wordMap.update(k, 2)
+    }else{
+        wordMap.put(k, 1)
+      }
+    }
+    wordMap : Map => newMap
+    }
 
 }
+
