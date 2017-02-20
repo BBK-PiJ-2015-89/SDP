@@ -32,11 +32,7 @@ object ScalaBasics {
    * @param end the end of the range
    * @return the inclusive Range from start to end
    */
-  def inRange(start: Int, end: Int): Range = {
-    val inRange = new RichInt(start)
-    inRange.to(end, 1)
-  }
-
+  def inRange(start: Int, end: Int): Range = start.to(end , 1)
   /**
    * Write a function that returns a Range of odd n odd integers starting at 1.
    *
