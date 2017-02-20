@@ -5,6 +5,7 @@ import javafx.collections.transformation.SortedList
 import scala.collection.SortedSet
 import scala.runtime.RichInt
 import scala.tools.nsc.doc.base.comment.OrderedList
+import collection.mutable.MultiMap
 
 /**
  * This is a singleton object containing the functions you need
@@ -228,7 +229,7 @@ object ScalaBasics {
    */
   def wordCounter(lines: Array[String]): Map[String, Int] = {
     //var wordMap = Map[String, Int]
-   val wordMap = collection.mutable.Map[String, Int] ()
+   val wordMap = Map[String, Int] ()
     val tempArray = Array [String]()
     for(i<- lines) {
       val tempArray = i.split(" ")
@@ -237,15 +238,24 @@ object ScalaBasics {
         tempArray :+ j
       }
     }
-    for(k <- tempArray) {
-      if(wordMap.contains(k)){
-        wordMap.update(k, 2)
-    }else{
-        wordMap.put(k, 1)
+
+    def aMultiMap(words:List[String]):List[(String, Int)]={
+      alist match{
+        case Nil => Nil;
+        case _ ::tail => 1 + tail
       }
     }
-    wordMap : Map => newMap
-    }
+  }
+    /*for(k <- tempArray) {
+      if(wordMap.contains(k)){
+        var tempNumber: Int = wordMap.get(k)
+        tempNumber = tempNumber+1
+        wordMap.update(k, tempNumber)
+      }else{
+        wordMap.put(k, 1)
+      }
+    }*/
+
 
 }
 
