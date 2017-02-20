@@ -181,11 +181,13 @@ object ScalaBasics {
    * @param s the potential palindrome
    * @return true if s is a palindrome; false otherwise
    */
-  def isPalindrome(s: String): Boolean = ???
-
+  def isPalindrome(s: String): Boolean = {
+    val filtered = for(i <- s if i isLetterOrDigit) yield 1
+    filtered == filtered.reverse
+  }
   /**
-   * You don't have to complete this one as we've removed it from the list 
-   * of required functions.
+   * You don't have to complete this one as we've removed it from the list
+    * of required functions.
    *
    * Sum the characters (as integers) provided as arguments to this method.
    *
