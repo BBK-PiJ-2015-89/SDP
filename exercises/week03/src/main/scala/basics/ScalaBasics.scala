@@ -90,12 +90,17 @@ object ScalaBasics {
    */
   def minFor(r: Array[Int]): Int = {
 
-    var orderedSet = collection.immutable.SortedSet[Int]()
+    var mini = Integer.MAX_VALUE
+    for(i <- r.indices){
+      mini = mini.min(r(i))
+    }
+    mini
+   /* var orderedSet = collection.immutable.SortedSet[Int]()
 
     for (i <- r.indices) {
       orderedSet += r(i)
     }
-    orderedSet.head
+    orderedSet.head*/
   }
 
   /**
@@ -112,7 +117,9 @@ object ScalaBasics {
    * @param r the array of integers
    * @return the minimum integer in the array
    */
-  def minRecursive(r: Array[Int]): Int = ???
+  def minRecursive(r: Array[Int]): Int = {
+      r.min
+  }
 
   /**
    * Return the base 36 equivalent of the BitInt b.
