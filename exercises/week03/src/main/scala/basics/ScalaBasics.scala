@@ -227,34 +227,12 @@ object ScalaBasics {
    * @param lines the lines of a text file
    * @return a map from words to the number of times that word was seen
    */
-  def wordCounter(lines: Array[String]): Map[String, Int] = {
-    //var wordMap = Map[String, Int]
-   val wordMap = Map[String, Int] ()
-    val tempArray = Array [String]()
-    for(i<- lines) {
-      val tempArray = i.split(" ")
-
-      for (j <- tempArray) {
-        tempArray :+ j
-      }
-    }
-
-    def aMultiMap(words:List[String]):List[(String, Int)]={
-      alist match{
-        case Nil => Nil;
-        case _ ::tail => 1 + tail
-      }
-    }
+  def wordCounter(lines: Array[String]): Map[Array[String], Int] = {
+      val words = lines.flatMap( x => x.split(" ") )
+      val wordList = words.toList
+      val mapList = wordList.groupBy(x => words).mapValues(String => )
+      mapList
   }
-    /*for(k <- tempArray) {
-      if(wordMap.contains(k)){
-        var tempNumber: Int = wordMap.get(k)
-        tempNumber = tempNumber+1
-        wordMap.update(k, tempNumber)
-      }else{
-        wordMap.put(k, 1)
-      }
-    }*/
 
 
 }
