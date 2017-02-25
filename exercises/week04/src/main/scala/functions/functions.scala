@@ -106,7 +106,11 @@ object Funcs {
     case h::t => foldLeft(ls, 1.0)(_ * _)
   }
 
-  def length[A](ls: List[A]): Int = ???
+  def length[A](ls: List[A]): Int = ls match {
+    case Nil => throw new IllegalArgumentException
+    case h::Nil => 1
+    case h::t => foldLeft(t, 1)((sum,_) => sum + 1)
+  }
 
   def reverse[A](ls: List[A]): List[A] = ???
 
