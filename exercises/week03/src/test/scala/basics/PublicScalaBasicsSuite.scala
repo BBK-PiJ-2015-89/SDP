@@ -115,8 +115,9 @@ class PublicScalaBasicsSuite extends FunSuite {
   }
 
   test("[7] Sum total words in sentences provided") {
-
-    println(wordCounter(Array("this is a sentence.", "this is a sentence too!")))
+    assert(wordCounter(Array("this is a sentence.", "this is a sentence too!")) == Map("this" -> 2, "is" -> 2, "a" -> 2, "too!" -> 1, "sentence." -> 1, "sentence" -> 1))
+    assert(wordCounter(Array("Graeme", "Graeme", "Mark", "Mark", "Elaine")) == Map("Graeme" -> 2, "Mark" -> 2, "Elaine" -> 1))
+    assert(wordCounter(Array("The ape jumped up da tree", "The dog jumped up da wall")) == Map("The" -> 2, "ape" -> 1, "dog" -> 1, "jumped" -> 2, "up" -> 2, "da" -> 2, "tree" -> 1, "wall" -> 1))
 }
 
   // test("[3] sumChars should sum up the characters as integers from its parameters") {
