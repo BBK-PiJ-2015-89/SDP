@@ -77,7 +77,10 @@ object Funcs {
    * list and the cumulative value.
    * @return the final valued.
    */
-  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = ???
+  def foldLeft[A, B](ls: List[A], z: B)(f: (B, A) => B): B = ls match {
+    case h::t => foldLeft(t, f(z, h))(f)
+    case Nil => z
+  }
 
   /**
     * Use your implementation of foldLeft to implement these functions:
