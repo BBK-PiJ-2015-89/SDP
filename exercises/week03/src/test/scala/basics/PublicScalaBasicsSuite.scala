@@ -114,6 +114,11 @@ class PublicScalaBasicsSuite extends FunSuite {
     }
   }
 
+  test("[7] Sum total words in sentences provided") {
+
+    println(wordCounter(Array("this is a sentence.", "this is a sentence too!")))
+}
+
   // test("[3] sumChars should sum up the characters as integers from its parameters") {
   //   TreeTraversals.getMethod("src/main/scala/basics/ScalaBasics.scala", "sumChars") match {
   //     case Some(method) =>
