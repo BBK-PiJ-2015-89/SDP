@@ -112,9 +112,15 @@ object Funcs {
     case h::t => foldLeft(t, 1)((sum,_) => sum + 1)
   }
 
-  def reverse[A](ls: List[A]): List[A] = ???
+  def reverse[A](ls: List[A]): List[A] = ls match {
+    case Nil => throw new IllegalArgumentException
+    case h::Nil => ls
+    case h::t => ls.foldLeft(List[A]())((h,t) => t :: h)
+  }
 
-  def flatten[A](ls: List[List[A]]): List[A] = ???
+  def flatten[A](ls: List[List[A]]): List[A] = ls match{
+
+  }
 
   // MAP AND FILTER
 
