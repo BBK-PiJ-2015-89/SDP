@@ -120,7 +120,7 @@ object Funcs {
 
   def flatten[A](ls: List[List[A]]): List[A] = ls match{
     case Nil => throw new IllegalArgumentException
-    case h::t => foldLeft(h, ls)(h => List[A])
+    case h::t => foldLeft(ls, List[A])((h, t) => h :List[A], t:List[A])
   }
 
   // MAP AND FILTER
