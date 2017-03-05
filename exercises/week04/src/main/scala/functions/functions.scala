@@ -118,9 +118,10 @@ object Funcs {
     case h::t => foldLeft(ls, List[A]())((h,t) => t :: h)
   }
 
-  def flatten[A](ls: List[List[A]]): List[A] = ls match{
-    case Nil => throw new IllegalArgumentException
-    case h::t => foldLeft(ls, List[A])((h, t) => h :List[A], t:List[A])
+  def flatten[A](ls: List[A]): List[A] = ls match {
+    case Nil => Nil
+    case (head: List[A]) :: tail => flatten(head) ::: flatten(tail)
+    case head :: tail => head :: flatten(tail)
   }
 
   // MAP AND FILTER
