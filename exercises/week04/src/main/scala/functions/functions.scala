@@ -118,11 +118,7 @@ object Funcs {
     case h::t => foldLeft(ls, List[A]())((h,t) => t :: h)
   }
 
-  def flatten[A](ls: List[A]): List[A] = ls match {
-    case Nil => Nil
-    case (head: List[A]) :: tail => flatten(head) ::: flatten(tail)
-    case head :: tail => head :: flatten(tail)
-  }
+  def flatten[A](ls: List[List[A]]): List[A] = foldLeft(ls, List[A]())((x,y) => x ::: y)
 
   // MAP AND FILTER
 

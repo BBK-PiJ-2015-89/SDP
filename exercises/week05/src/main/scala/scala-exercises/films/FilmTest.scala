@@ -1,3 +1,4 @@
+/*
 package films
 
 object FilmTest extends App {
@@ -25,4 +26,4 @@ object FilmTest extends App {
   dieHard.director.name // should be "John McTiernan"
   invictus.isDirectedBy(nolan) // should be false
 
-}
+}*/
