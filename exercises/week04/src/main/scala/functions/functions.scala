@@ -131,7 +131,10 @@ object Funcs {
     * @param f  : A => B the function to be applied to each element of the input.
     * @return the resulting list from applying f to each element of ls.
     */
-  def map[A, B](ls: List[A])(f: A => B): List[B] = ???
+  def map[A, B](ls: List[A])(f: A => B): List[B] = ls match {
+    case Nil => Nil
+    case hd :: tl => f(hd) :: map(tl)(f)
+  }
 
   /**
     * filter removes all elements from a list for which a given predicate
@@ -142,7 +145,10 @@ object Funcs {
     * @param f  : A => Boolean the predicate
     * @return the filtered list.
     */
-  def filter[A](ls: List[A])(f: A => Boolean): List[A] = ???
+  def filter[A](ls: List[A])(f: A => Boolean): List[A] = ls match {
+    case Nil => Nil
+    case hd :: tl => if (f(hd)) hd :: filter(tl)(f) else filter(tl)(f)
+  }
 
   /**
     * flatMap is very similar to map. However, the function returns a List,
@@ -153,7 +159,13 @@ object Funcs {
     * @return a List[B] containing the flattened results of applying f to all
     *         elements of ls.
     */
-  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = ???
+  def flatMap[A, B](ls: List[A])(f: A => List[B]): List[B] = {
+    def helper(result: List[B])(input: List[A])(f: A => List[B]): List[B] = input match {
+      case (x::xs) => helper(result ++ f(x))(xs)(f)
+      case _ => result
+    }
+    helper(List[B]())(ls)(f)
+  }
 
   // COMBINING FUNCTIONS
 
@@ -167,19 +179,28 @@ object Funcs {
     *           length is greater than 0.
     * @return the average value of the largest values in the pairs.
     */
-  def maxAverage(ls: List[(Double, Double)]): Double = ???
+  def maxAverage(ls: List[(Double, Double)]): Double = {
+    val result = map(ls){case (y,z) => if(y<z) z else y}
+    sum(result) / length(result)
+  }
 
   /**
     * variance takes a List[Double] and calculates the squared distance
     * of each value from the mean. This is the *variance*, as used in
     * statistics.
     * 1) Find the mean M of the input.
-    *
     * 2) For each value V in the input, calculate (V - M)^2.
     * 3) Find the variance.
     * Which methods that we've already defined can you use? (At least one!)
     * @param ls     : List[Double] a list of values, whose length is greater than 0.
     * @param return the variance of the input.
     */
-  def variance(ls: List[Double]): Double = ???
+
+  import scala.math.pow
+
+  def variance(ls: List[Double]): Double = {
+    val mean = sum(ls) / length(ls)
+    val lst = map(ls)(v => pow(v - mean,2))
+    sum(lst) / length(lst)
+}
 }
