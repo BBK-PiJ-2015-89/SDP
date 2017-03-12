@@ -10,8 +10,8 @@ class Counter (var number : Int){
     new Counter(number + inc)
   }
 
-  def dec (): Counter = {
-    new Counter(number -1)
+  def dec (dec: Int = 1): Counter = {
+    new Counter(number -dec)
   }
 
   def count () : Int = {
@@ -21,6 +21,7 @@ class Counter (var number : Int){
 
 
 object Test extends App {
-  val x = new Counter(10).inc(2)
+  val x = new Counter(10).inc().inc().count()
+  println(x)
 }
 
