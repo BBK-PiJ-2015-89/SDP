@@ -18,3 +18,10 @@ case class Film (name: String, yearofRelease: Int, imdbRating: Double, director:
   }
 
 }
+
+object Film {
+
+  def highestRating(film1: Film, film2: Film): Double = if(film1.imdbRating>film2.imdbRating) film1.imdbRating else film2.imdbRating
+
+  def oldestDirector (film1: Film, film2: Film): Director = if((film1.director.yearOfBirth -film1.yearofRelease)>(film2.director.yearOfBirth -film2.yearofRelease)) film1.director else film2.director
+  }

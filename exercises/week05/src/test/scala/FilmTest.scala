@@ -35,4 +35,6 @@ object FilmTest extends App {
   println(y.directorsAge)
 
   println(Director.older(eastwood,nolan))
+
+  println(Film.oldestDirector(highPlainsDrifter, dieHard))//should be  die hard
 }
