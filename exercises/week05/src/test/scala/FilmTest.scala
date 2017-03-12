@@ -33,4 +33,6 @@ object FilmTest extends App {
   val y = thomasCrownAffair.copy(director = new Director("Graeme", "Wilkinson", 1989))
   println(y)
   println(y.directorsAge)
+
+  println(Director.older(eastwood,nolan))
 }

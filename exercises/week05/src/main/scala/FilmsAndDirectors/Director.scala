@@ -8,3 +8,7 @@ case class Director (firstName : String, lastName: String, yearOfBirth: Int){
   def name = firstName + " " + lastName
 
 }
+
+object Director {
+  def older (directorOne: Director, directorTwo: Director) = if(directorOne.yearOfBirth>directorTwo.yearOfBirth) directorTwo else directorOne
+}

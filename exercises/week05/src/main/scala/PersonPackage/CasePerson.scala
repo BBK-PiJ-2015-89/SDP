@@ -10,7 +10,7 @@ object CasePerson {
 
   def apply(name: String): CasePerson = {
     val namesSplit = name.split(" ")
-    val newBorn = new CasePerson(firstName = "", lastName = "")
+    val newBorn = CasePerson(firstName = "", lastName = "")
     newBorn.firstName = namesSplit(0)
     newBorn.lastName = namesSplit(1)
     newBorn
