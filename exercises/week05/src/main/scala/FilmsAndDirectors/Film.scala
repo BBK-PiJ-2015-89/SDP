@@ -3,7 +3,7 @@ package FilmsAndDirectors
 /**
   * Created by gwilki01 on 12/03/2017.
   */
-class Film (name: String, yearofRelease: Int, imdbRating: Double, director: Director) {
+case class Film (name: String, yearofRelease: Int, imdbRating: Double, director: Director) {
 
   def directorsAge : Int = {
     val age = yearofRelease - directorsAge
