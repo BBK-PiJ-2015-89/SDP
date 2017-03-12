@@ -5,17 +5,19 @@ package PersonPackage
   */
 class Person (var firstName: String, var lastName: String){
 
-
 }
-object Person{
+object Person {
 
-  def apply (name: String): Person ={
-    val namessplit = name.split(" ")
-    val newBorn = new Person (firstName = "", lastName = "")
-    newBorn.firstName = namessplit(0)
-    newBorn.lastName = namessplit(1)
+  def apply(name: String): Person = {
+    val namesSplit = name.split(" ")
+    val newBorn = new Person(firstName = "", lastName = "")
+    newBorn.firstName = namesSplit(0)
+    newBorn.lastName = namesSplit(1)
     newBorn
   }
+}
 
-
+object Test extends App {
+  val person1 = Person("Graeme Wilkinson")
+  println(person1.firstName + ", " + person1.lastName)
 }
