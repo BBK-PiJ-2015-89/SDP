@@ -1,10 +1,13 @@
+
+
 /**
   * Created by graemewilkinson on 05/03/2017.
   */
-class Counter (var number : Int) {
+class Counter (var number : Int){
 
-  def inc (): Counter = {
-    new Counter(number + 1)
+
+  def inc (inc: Int = 1): Counter = {
+    new Counter(number + inc)
   }
 
   def dec (): Counter = {
@@ -16,8 +19,8 @@ class Counter (var number : Int) {
   }
 }
 
-object Test extends App {
-  val x = new Counter(10).inc().inc().count()
 
-  println(x)
+object Test extends App {
+  val x = new Counter(10).inc(2)
 }
+
