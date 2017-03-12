@@ -28,4 +28,9 @@ object FilmTest extends App {
   dieHard.director.name // should be "John McTiernan"
   invictus.isDirectedBy(nolan) // should be false
 
+  val x = thomasCrownAffair.copy(name = "Graeme's great day out!")
+  println(x)
+  val y = thomasCrownAffair.copy(director = new Director("Graeme", "Wilkinson", 1989))
+  println(y)
+  println(y.directorsAge)
 }
