@@ -24,8 +24,9 @@ case class CounterCase(number : Int = 0){
 
 object CaseTest extends App {
   val x = CounterCase(10).inc().inc().count()
+  println(x)//should be 12
   val adder = new Adder(7)
-  val y = CounterCase().adjust(adder).count
-  println(y)
+  val y = CounterCase().adjust(adder).count()
+  println(y) // should be 7
 
 }
