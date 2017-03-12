@@ -27,6 +27,8 @@ object CaseTest extends App {
   println(x)//should be 12
   val adder = new Adder(7)
   val y = CounterCase().adjust(adder).count()
+  val z = CounterCase(10).inc(7).adjust(adder)
   println(y) // should be 7
+  println(z)//24
 
 }
