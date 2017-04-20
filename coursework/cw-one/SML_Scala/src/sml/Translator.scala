@@ -10,6 +10,7 @@ class Translator(fileName: String) {
   private final val MUL = "mul"
   private final val SUB = "sub"
   private final val OUT = "out"
+  private final val DIV = "div"
 
   /**
     * translate the small program in the file into lab (the labels) and prog (the program)
