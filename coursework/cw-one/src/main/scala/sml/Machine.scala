@@ -43,7 +43,7 @@ object Machine {
       m.execute()
       println("Ending program execution.")
       println("Values of registers at program termination:")
-      println(m.regs + ".")
+      println(m.regs + "")
     }
   }
 }
