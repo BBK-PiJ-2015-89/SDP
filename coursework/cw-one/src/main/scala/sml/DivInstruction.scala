@@ -6,11 +6,7 @@ class DivInstruction(label: String, op: String, val result: Int, val op1: Int, v
   override def execute(m: Machine) {
     val value1 = m.regs(op1)
     val value2 = m.regs(op2)
-    if(value1/value2==0){
-      throw new ArithmeticException()
-    }
-    else{
-    m.regs(result) = value1 / value2}
+    m.regs(result) = value1 / value2
   }
 
   override def toString(): String = {
