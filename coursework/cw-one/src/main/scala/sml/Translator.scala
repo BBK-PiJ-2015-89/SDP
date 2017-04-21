@@ -1,6 +1,6 @@
 package sml
 
-import scala.tools.nsc.typechecker.Macros.Failure
+
 import scala.util.{Failure, Success, Try}
 
 /*
@@ -40,39 +40,21 @@ class Translator(fileName: String) {
             case ex: NumberFormatException => f
           }
         })
-        val cls = Try(Class.forName("sml." + fields(1).capitalize + "Instruction"))
+        val cls = Try(Class.forName("sml." + fields(1).capitalize + "Instruction.scala"))
         cls match {
-          case s: Success => {
-            val cons = s.get.getClass.getConstructors.head
-            try val obj = cons.newInstance(arguments).asInstanceOf[Instruction]
+          case Success(s) => {
+            val cons = cls.get.getClass.getConstructors.head
+            val obj = cons.newInstance(arguments).asInstanceOf[Instruction]
             program = program :+ obj
           }
-          case f: Failure => println("failed")
-//        }
-//        fields(1) match {
-//          case ADD =>
-//            program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
-//          case SUB =>
-//            program = program :+ SubInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
-//          case DIV =>
-//            program = program :+ DivInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
-//          case MUL =>
-//            program = program :+ MulInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
-//          case OUT =>
-//            program = program :+ OutInstruction(fields(0), fields(2).toInt)
-//          case BNZ =>
-//            program = program :+ BnzInstruction(fields(0), fields(2).toInt, fields(3))
-//          case LIN =>
-//            program = program :+ LinInstruction(fields(0), fields(2).toInt, fields(3).toInt)
-//          case x =>
-//            println(s"Unknown instruction $x")
-//        }
+          case Failure(f) => println("failed")
+        }
       }
     }
     new Machine(labels, program)
   }
 }
-
 object Translator {
   def apply(file: String) = new Translator(file)
 }
+
