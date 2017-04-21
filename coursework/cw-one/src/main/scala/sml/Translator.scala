@@ -40,13 +40,13 @@ class Translator(fileName: String) {
             case ex: NumberFormatException => f
           }
         })
-        val cls = Try(Class.forName("sml." + fields(1).capitalize + "Instruction.scala"))
+        val cls = Try(Class.forName("sml." + fields(1).capitalize + "Instruction"))
         cls match {
-          case Success(s) => {
-            val cons = cls.get.getClass.getConstructors.head
+          case Success(s) =>
+            val cons = s.getClass.getConstructors.head
             val obj = cons.newInstance(arguments).asInstanceOf[Instruction]
             program = program :+ obj
-          }
+
           case Failure(f) => println("failed")
         }
       }
