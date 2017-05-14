@@ -1,7 +1,6 @@
 package sml
 
-
-import scala.util.{Failure, Success, Try}
+//import scala.util.{Failure, Success, Try}
 
 /*
  * The translator of a <b>S</b><b>M</b>al<b>L</b> program.
@@ -33,8 +32,8 @@ class Translator(fileName: String) {
         // finally add that to program
         //
         // like this : program :+ obj
-        labels.add(fields(0))
-        val arguments = fields.map(f => {
+       labels.add(fields(0))
+        /*val arguments = fields.map(f => {
           try new Integer(f)
           catch {
             case ex: NumberFormatException => f
@@ -48,6 +47,26 @@ class Translator(fileName: String) {
             program = program :+ obj
 
           case Failure(f) => println("failed")
+          }
+          case f: Failure => println("failed")
+        }*/
+        fields(1) match {
+          case ADD =>
+            program = program :+ AddInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case SUB =>
+            program = program :+ SubInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case DIV =>
+            program = program :+ DivInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case MUL =>
+            program = program :+ MulInstruction(fields(0), fields(2).toInt, fields(3).toInt, fields(4).toInt)
+          case OUT =>
+            program = program :+ OutInstruction(fields(0), fields(2).toInt)
+          case BNZ =>
+            program = program :+ BnzInstruction(fields(0), fields(2).toInt, fields(3))
+          case LIN =>
+            program = program :+ LinInstruction(fields(0), fields(2).toInt, fields(3).toInt)
+          case x =>
+            println(s"Unknown instruction $x")
         }
       }
     }
